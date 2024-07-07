@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+#calendar {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.fc-day {
+    position: relative;
+}
+
+.fc-event {
+    font-size: 0.9em;
+}
+
+.fc-day-number[data-summary] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-weight: bold;
+}
+
+.fc-day-number::after {
+    content: attr(data-summary);
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
